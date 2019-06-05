@@ -11,7 +11,6 @@ import java.util.List;
 
 import static org.springframework.util.MimeTypeUtils.APPLICATION_JSON_VALUE;
 
-@Api
 @RestController
 @RequestMapping("/v1/task")
 @CrossOrigin(origins = "*")
