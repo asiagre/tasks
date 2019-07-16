@@ -1,7 +1,5 @@
 package com.crud.tasks.config;
 
-import com.crud.tasks.controller.TaskController;
-import io.swagger.annotations.Api;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.format.FormatterRegistry;
