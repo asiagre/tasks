@@ -88,4 +88,19 @@ public class DbServiceTest {
         //Then
         Assert.assertEquals("name", taskFromDb.getTitle());
     }
+
+    @Test
+    public void shouldDeleteTask() {
+        //Given
+        Task task = new Task(1L, "name", "description");
+        when(taskRepository.findById(1L)).thenReturn(null);
+
+        //When
+        dbService.deleteTask(1L);
+        Optional<Task> taskFromDb = dbService.getTask(1L);
+
+        //Then
+        Assert.assertNull(taskFromDb);
+    }
+
 }
