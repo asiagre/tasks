@@ -22,10 +22,11 @@ dependencies {
     compile('mysql:mysql-connector-java')
     //compile('org.postgresql:postgresql')
     compile('org.springframework.boot:spring-boot-starter-mail:2.1.5.RELEASE')
-    compile('com.zaxxer:HikariCP:2.3.2')
-    compile('commons-dbcp:commons-dbcp:1.2.2')
-    compile('org.apache.commons:commons-dbcp2:2.6.0')
+    //compile('com.zaxxer:HikariCP:2.3.2')
+    //compile('commons-dbcp:commons-dbcp:1.2.2')
+    //compile('org.apache.commons:commons-dbcp2:2.6.0')
     compile('com.google.code.gson:gson:2.8.2')
+    compile('org.springframework.boot:spring-boot-starter-actuator')
 
     testCompile('org.springframework.boot:spring-boot-starter-test')
     
