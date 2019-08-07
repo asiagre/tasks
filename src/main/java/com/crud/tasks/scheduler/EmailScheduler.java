@@ -2,6 +2,7 @@ package com.crud.tasks.scheduler;
 
 import com.crud.tasks.config.AdminConfig;
 import com.crud.tasks.domain.Mail;
+import com.crud.tasks.domain.Template;
 import com.crud.tasks.repository.TaskRepository;
 import com.crud.tasks.service.SimpleEmailService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,6 +39,6 @@ public class EmailScheduler {
                 SUBJECT,
                 "Currently in database you got: " + size + " " + singleOrPlural,
                 ""
-        ));
+        ), Template.SCHEDULED);
     }
 }
